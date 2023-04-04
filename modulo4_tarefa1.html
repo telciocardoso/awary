@@ -4,13 +4,51 @@ Modulo 4 - Tarefa 1 - Miniblog
 </title>
 <head>
   <script>
-    body {
-    background-color: green;
-    color: white;
+    var p;
+
+    function setup() {
+    createCanvas(0, 0); //we aren't using the p5.js canvas, we're using js to create and then manipulate HTML and CSS
+    p = createP('Is this the real life? Is this just fantasy? Caught in a landslide, no escape from reality. Open your eyes, look up to the skies and see.'); // create a <p> element in the HTML DOM that contains the listed text.
+    }
+
+    function draw() {
+
+    let w = map(mouseX, 0, windowWidth, 100, 1000); // When the mouseX is 0, the font width is 100. When the mouseX is the windowWidth, the font width is 1000.
+
+    let h = windowWidth / 10.5; // makes the text fit container responsively
+
+    lineH = 1.25 // controls the line-height (leading) and can be adjusted to make that change based on different parameters
+
+    // below, we use js to apply CSS styles. This lets the user interaction update the CSS 
+    p.style('font-weight', w);
+    p.style('font-size', h + 'px');
+    p.style('line-height', lineH)
+
+
     }
   </script>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap');
+
+    html,
+    body {
+    margin: 0;
+    padding: 0;
+    background: #10092c;
+    }
+
+    p {
+    margin-top: 0;
+    padding: 5px 30px;
+
+    /* call the font for the paragraph */
+    font-family: 'Fraunces', serif;
     
+    /* color of the paragraph is below (this one applies a gradient) */
+    background: -webkit-linear-gradient(#FF0061, #E1FF00, #00FF9E, #1E00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
   </style>
 </head>
 <body>
@@ -24,7 +62,7 @@ Modulo 4 - Tarefa 1 - Miniblog
   <p>Lorem ipsum dolor sit amet. Et possimus odio sit vitae harum et eius numquam ut autem magni et sequi suscipit. Est molestiae quidem ut cumque eveniet nam harum nobis hic laborum numquam qui sequi similique ad deserunt inventore a commodi consequuntur. Ut modi labore ea quisquam ducimus qui facere totam aut aliquid quibusdam quo tempora possimus. </p><p>Et reiciendis officiis ut quia suscipit ab omnis quasi a omnis consequatur sit quisquam magni. Non voluptatum aspernatur sed velit possimus et nobis deserunt eum magnam impedit. Et odit temporibus ea officiis sint rem accusantium iste et iure sequi et omnis rerum. </p><p>Et tempora quis est doloremque dolorem 33 commodi adipisci nam optio cumque ut minima enim. Ut quae quia aut voluptatibus accusamus qui doloribus sapiente non veniam deserunt sit deleniti nemo. </p>
 
 
-  </h2>Post 3 - Topico C </h2></br>
+  <h2>Post 3 - Topico C </h2></br>
   <p>Lorem ipsum dolor sit amet. Et possimus odio sit vitae harum et eius numquam ut autem magni et sequi suscipit. Est molestiae quidem ut cumque eveniet nam harum nobis hic laborum numquam qui sequi similique ad deserunt inventore a commodi consequuntur. Ut modi labore ea quisquam ducimus qui facere totam aut aliquid quibusdam quo tempora possimus. </p><p>Et reiciendis officiis ut quia suscipit ab omnis quasi a omnis consequatur sit quisquam magni. Non voluptatum aspernatur sed velit possimus et nobis deserunt eum magnam impedit. Et odit temporibus ea officiis sint rem accusantium iste et iure sequi et omnis rerum. </p><p>Et tempora quis est doloremque dolorem 33 commodi adipisci nam optio cumque ut minima enim. Ut quae quia aut voluptatibus accusamus qui doloribus sapiente non veniam deserunt sit deleniti nemo. </p>
 
 </body>

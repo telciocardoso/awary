@@ -3,6 +3,22 @@
         <style>
             .flex-container {
                 display: flex;
+                flex-direction: column;
+                flex: 200px;
+                align-items: center;
+                align-content: center;
+            }
+            .flex-item {
+                background: tomato;
+                padding: 5px;
+                width: 500px;
+                height: 550px;
+                margin-top: 10px;
+                line-height: 150px;
+                color: white;
+                font-weight: bold;
+                font-size: 3em;
+                text-align: center;
             }
         </style>
         <script>
@@ -11,7 +27,7 @@
     </head>
     <body>
         <div class="flex-container">
-            <div>1</div>
+            <div class="flex-item">1</div>
         </div>
     </body>
 </html>

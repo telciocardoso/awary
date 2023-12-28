@@ -1,14 +1,41 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Miniblog</title>
         <script>
             function adicionar(){
-                alert("adiciona comentário")
+                let elemento = document.getElementById("section1").innerHTML;
+                document.getElementById("section1").innerHTML =  elemento + document.getElementById("post").value + "<BR>";
             }
         </script>
+        <style>
+            .border {
+                border: 2px solid lightgrey;
+                border-radius: 12px;
+                padding: 5px;
+                margin: 20px;
+            }
+            .div {
+                background-color: white;
+                width: 300px;
+                border-radius: 12px;
+                border-color: gray;
+                margin: 20px;
+            }
+            .spam {
+                margin: 20px;
+            }
+        </style>
     </head>
     <body>
-        <input type="text" label="comentário" id="comment" value="" size="50">
-        <button id="enviar" onclick=adicionar()>enviar</button>
+        <spam class="spam">POSTS</spam><br>
+        <div class="div">
+            <section id="section1">
+               
+            </section>
+        </div>
+        <br>
+        <input type="text" class="border" label="comment" id="post" value="" size="50">
+        <button id="commend" class="border"  onClick=adicionar()>Comentar</button>
     </body>
 </html>

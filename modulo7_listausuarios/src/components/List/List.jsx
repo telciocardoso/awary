@@ -1,9 +1,13 @@
 import Item from '../Item';
 
-function List({ items = [] }) {
+function List({ items = [], onItemClick }) {
+  const handleItemClick = (item) => {
+    onItemClick && onItemClick(item);
+  }
+
   const map = items.map((item) => {
     return (
-      <Item key={item.id} item={item} />
+      <Item key={item.id} item={item} onItemClick={handleItemClick} />
     )
   });
 

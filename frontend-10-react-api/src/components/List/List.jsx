@@ -1,25 +1,20 @@
+import ListItem from '../ListItem';
+import './List.css';
 
-import { useEffect, useState, useContext } from 'react';
-import MyContext from '../../contexts/myContext';
+function List({ items = [] }) {
+    const map = items.map((item) => {
+        return (
+            <ListItem key={item.id} item={item} />
+        );
+    });
 
-
-function List () {
-  const {items} = useContext(MyContext)
-
-    
     return (
-        <div>
-          
-          {items.map((item, i) => {
-            return (
-              <div key={i}>
-                <p><img alt={item.name} className="list-item-image" src="" /> {item.name}</p>
-            
-              </div>
-            );
-          })}
+        <div className='list-wrapper'>
+            <ul className='list'>
+                {map}
+            </ul>
         </div>
-      );
+    );
 }
 
 export default List;

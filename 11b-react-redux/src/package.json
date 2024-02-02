@@ -1,0 +1,15 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "storybook-build": "build-storybook -c .storybook -o ./dist/my-component/storybook/"
+  },
+  "devDependencies": {
+    "@storybook/cli": "^7.6.10"
+  },
+  "dependencies": {
+    "yarn": "^1.22.21"
+  }
+}

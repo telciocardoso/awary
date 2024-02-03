@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Home from '../Home';
+import Home from '../Main';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 
 const Login = (props) => {

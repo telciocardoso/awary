@@ -12,13 +12,12 @@ import { IconContext } from "react-icons/lib";
 
 
 const SidebarNav = styled.nav`
-	
-	width: 250px;
-	height: 80%;
-	margin-top: 30px;
+	position: absolute;
+	width: 200px;
+	height: 100%;
+
 	justify-content: left;
-	position: fixed;
-	top: 100;
+
 	border-right: 1px solid #00bc51;
     border-radius: 1px;
 	
@@ -29,7 +28,7 @@ const SidebarWrap = styled.div`
 `;
 
 const Sidebar = () => {
-	const [sidebar, setSidebar] = useState(false);
+	const [sidebar, setSidebar] = useState(true);
 
 	const showSidebar = () => setSidebar(!sidebar);
 

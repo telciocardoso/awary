@@ -8,12 +8,12 @@ function Header() {
     <div className="header">
         <nav>
             <ul>
-                <div className="p-1">
+                <div>
                     <li>
                         Home
                     </li>
                 </div>
-                <div className="p-1">
+                <div>
                     <li>
                     Technology
                     </li>

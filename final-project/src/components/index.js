@@ -5,3 +5,6 @@ export { default as Login } from './Header';
 export { default as Sidebar } from './Footer';
 export { default as SidebarData } from './SidebarData';
 export { default as SubMenu } from './SubMenu';
+export { default as Service } from './Service';
+export { default as List } from './List';
+export { default as ListItem } from './ListItem';

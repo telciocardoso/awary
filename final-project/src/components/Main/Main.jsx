@@ -1,6 +1,8 @@
 
 import Sidebar from "../Sidebar";
 import Card from '../Card';
+import Header from '../Header';
+import Footer from '../Footer';
 
 
 import {
@@ -12,6 +14,7 @@ import {
 function Main (){
     return (
             <div> 
+                <Header />
                 <section className="section">
                     <Sidebar />
                  </section>
@@ -27,6 +30,7 @@ function Main (){
                  <section className="section-center-1">
                     <Card />
                  </section>
+                 <Footer />
 
             </div>
                 

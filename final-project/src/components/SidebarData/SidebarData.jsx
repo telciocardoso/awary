@@ -9,7 +9,7 @@ import * as RiIcons from "react-icons/ri";
 const SidebarData = [
 	{
 		title: "Home",
-		path: "/company",
+		path: "/home",
 		icon: <AiIcons.AiFillHome />,
 		iconClosed: <RiIcons.RiArrowDownSFill />,
 		iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -29,7 +29,7 @@ const SidebarData = [
 	},
 	{
 		title: "Services",
-		path: "/services",
+		path: "/service",
 		icon: <IoIcons.IoIosPaper />,
 		iconClosed: <RiIcons.RiArrowDownSFill />,
 		iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -37,19 +37,19 @@ const SidebarData = [
 		subNav: [
 			{
 				title: "Service 1",
-				path: "/services/services1",
+				path: "/service",
 				icon: <IoIcons.IoIosPaper />,
 				cName: "sub-nav",
 			},
 			{
 				title: "Service 2",
-				path: "/services/services2",
+				path: "/service",
 				icon: <IoIcons.IoIosPaper />,
 				cName: "sub-nav",
 			},
 			{
 				title: "Service 3",
-				path: "/services/services3",
+				path: "/service",
 				icon: <IoIcons.IoIosPaper />,
 			},
 		],

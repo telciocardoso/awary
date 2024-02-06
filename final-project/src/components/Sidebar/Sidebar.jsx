@@ -7,6 +7,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import SidebarData from "../SidebarData";
 import SubMenu from "../SubMenu";
+import Service  from "../Service";
 import { IconContext } from "react-icons/lib";
 
 
@@ -41,6 +42,7 @@ const Sidebar = () => {
 								<SubMenu
 									item={item}
 									key={index}
+									onClick={Service}
 								/>
 							);
 						})}

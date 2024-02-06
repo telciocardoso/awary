@@ -18,7 +18,7 @@ const Login = (props) => {
 
     return (
 
-    <div className={"cardLogin"}>
+    <div className={"card-login"}>
   
         <br />
         

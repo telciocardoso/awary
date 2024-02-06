@@ -7,9 +7,19 @@ function Card() {
   const[texto, setColor] = useState('');
   return (
     <div className="card">
-      <div className={texto} onClick={() => setColor('texto')}>
-        Indicadores <br/>
-      </div>
+
+                <div className="card-header">
+                        Sales
+                </div>
+                <div className="card-body">
+                        <h2><center>USD 150K</center></h2>
+                </div>
+                <div className="card-footer">
+                <h4><center>Product</center></h4>
+                </div>
+                
+
+        
     </div>
 
   );

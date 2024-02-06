@@ -19,7 +19,7 @@ function Header() {
                     </li>
                 </div>
                 <div className="avatar">
-                  <Avatar name="Telcio Cardoso" size="50" round={true} />
+                  <Avatar name="Telcio Cardoso" size="50" round={true} color="white" fgColor="black"/>
                 </div>
         </ul>
       </nav>

@@ -27,6 +27,7 @@ function Main (){
                  <section className="section-center-1">
                     <Card />
                  </section>
+
             </div>
                 
     );
